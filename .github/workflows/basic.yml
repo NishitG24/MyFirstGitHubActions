@@ -8,3 +8,6 @@ jobs:
     steps:
         - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
         - run: echo "🐧 This job is now running on a ${{ runner.os }} server hosted by GitHub!"
+        - name: CheckOut Test
+          uses: actions/checkout@v2.5.0
+        - run: echo "This job is running for repository ${{ github.repository }}"
