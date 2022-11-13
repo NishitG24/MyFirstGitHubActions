@@ -19,6 +19,7 @@ jobs:
         - name: Run Scipt file from repo
           run: sh ./run.sh
           shell: pwsh
+        - run: test run fail
   Selenium_Second_Workflows:
     runs-on: ubuntu-latest
     needs: Selenium_First_Workflows
